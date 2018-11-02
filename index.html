@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Product Demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+    <link rel="stylesheet" href="public/css/w3.css">
+    <link rel="stylesheet" href="public/css/style.css">
+    <script src="public/js/w3.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <div class="w3-bar w3-red w3-padding-large w3-card">
+      <div class="w3-content">
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-hover-none w3-hide-large w3-hide-medium" onclick="w3.toggleClass('#mobileNav', 'w3-show');">
+          <i class="fa fa-bars"></i>
+        </a>
+        <a href="#" class="w3-bar-item w3-button w3-hover-none">Product Demo</a>
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-hover-none w3-right">
+          <i class="fa fa-search"></i>
+        </a>
+        <input type="search" class="w3-bar-item w3-input w3-round-medium w3-margin-right w3-margin-left w3-right w3-medium" placeholder="Search...">
+        <a href="admin.html" class="w3-bar-item w3-button w3-hover-none w3-hide-small w3-right">Admin</a>
+        <a href="#" class="w3-bar-item w3-button w3-hover-none w3-hide-small w3-right">Products</a>
+      </div>
+    </div>
+    <div id="mobileNav" class="w3-bar-block w3-pale-red w3-hide w3-hide-large w3-hide-medium">
+      <input type="search" class="w3-bar-item w3-input w3-round-medium w3-margin-top w3-medium" placeholder="Search...">
+      <a href="#" class="w3-bar-item w3-button w3-hover-white">Products</a>
+      <a href="admin.html" class="w3-bar-item w3-button w3-hover-white">Admin</a>
+    </div>
+    <!-- Header -->
+
+    <!-- Slider -->
+    <div class="w3-display-container w3-animate-zoom">
+      <img class="slider w3-animate-opacity" src="public/images/1.jpg" width="100%">
+      <img class="slider w3-animate-opacity" src="public/images/2.jpg" width="100%">
+      <img class="slider w3-animate-opacity" src="public/images/3.jpg" width="100%">
+      <button class="w3-button w3-transparent w3-xxlarge w3-display-left w3-text-white w3-hover-text-red w3-hover-none" onclick="slideLeft()">
+        <i class="fa fa-chevron-left"></i>
+      </button>
+      <button class="w3-button w3-transparent w3-xxlarge w3-display-right w3-text-white w3-hover-text-red w3-hover-none" onclick="slideRight()">
+        <i class="fa fa-chevron-right"></i></button>
+    </div>
+    <!-- Slider -->
+
+    <!-- Body -->
+    <div class="w3-container w3-margin-bottom">
+      <div class="w3-content">
+        <br />
+        <p class="w3-xxlarge">Product Listing</p>
+        <div class="w3-row-padding">
+          <div class="w3-quarter">
+            <p class="w3-large">
+              <i class="fa fa-filter"></i> Filter Products
+            </p>
+            <button onclick="w3.toggleClass('#sideNavCategories', 'w3-show')" class="w3-button w3-block w3-white w3-hover-none w3-text-red w3-left-align">
+              Categories&nbsp;<i class="fa fa-chevron-down"></i>
+            </button>
+            <div id="sideNavCategories" class="w3-hide w3-container w3-animate-opacity">
+              <p>Categories</p>
+            </div>
+
+            <button onclick="w3.toggleClass('#sideNavColors', 'w3-show')" class="w3-button w3-block w3-white w3-hover-none w3-text-red w3-left-align">
+              Colors&nbsp;<i class="fa fa-chevron-down"></i>
+            </button>
+            <div id="sideNavColors" class="w3-hide w3-container w3-animate-opacity">
+              <p>Colors</p>
+            </div>
+          </div>
+          <div class="w3-threequarter">
+            <div class="w3-container">
+              <div class="w3-card w3-">
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Body -->
+
+    <!-- Footer -->
+    <br />
+    <div class="w3-container w3-red w3-padding-16 w3-margin-top">
+      <div class="w3-content">
+        <a href="#" class="w3-bar-item w3-button w3-hover-none">Product Demo</a>
+        <a href="admin.html" class="w3-bar-item w3-button w3-hover-none">Admin</a>
+        <div class="w3-bar-item w3-hover-none w3-hover-text-white w3-right">
+          &copy; 2018
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+    <script src="public/js/script.js" type="text/javascript"></script>
+  </body>
+</html>
