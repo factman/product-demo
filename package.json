@@ -1,0 +1,24 @@
+{
+  "name": "product-demo",
+  "version": "1.0.0",
+  "description": "Product Demo Projects",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eTEAM-Technology/Product-Demo.git"
+  },
+  "keywords": [
+    "product",
+    "ecommerce",
+    "demo"
+  ],
+  "author": "The Mean Team",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/eTEAM-Technology/Product-Demo/issues"
+  },
+  "homepage": "https://github.com/eTEAM-Technology/Product-Demo#readme"
+}

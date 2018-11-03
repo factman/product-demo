@@ -16,10 +16,10 @@
           <i class="fa fa-bars"></i>
         </a>
         <a href="#" class="w3-bar-item w3-button w3-hover-none">Product Demo</a>
-        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-hover-none w3-right">
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-hover-none w3-right w3-hide-small">
           <i class="fa fa-search"></i>
         </a>
-        <input type="search" class="w3-bar-item w3-input w3-round-medium w3-margin-right w3-margin-left w3-right w3-medium" placeholder="Search...">
+        <input type="search" class="w3-bar-item w3-input w3-round-medium w3-margin-right w3-margin-left w3-right w3-medium w3-hide-small" placeholder="Search...">
         <a href="admin.html" class="w3-bar-item w3-button w3-hover-none w3-hide-small w3-right">Admin</a>
         <a href="#" class="w3-bar-item w3-button w3-hover-none w3-hide-small w3-right">Products</a>
       </div>
@@ -58,7 +58,14 @@
               Categories&nbsp;<i class="fa fa-chevron-down"></i>
             </button>
             <div id="sideNavCategories" class="w3-hide w3-container w3-animate-opacity">
-              <p>Categories</p>
+              <ul id="myUL">
+                <li>Hit the gym</li>
+                <li class="checked">Pay bills</li>
+                <li>Meet George</li>
+                <li>Buy eggs</li>
+                <li>Read a book</li>
+                <li>Organize office</li>
+              </ul>
             </div>
 
             <button onclick="w3.toggleClass('#sideNavColors', 'w3-show')" class="w3-button w3-block w3-white w3-hover-none w3-text-red w3-left-align">
