@@ -36,10 +36,10 @@
       <img class="slider w3-animate-opacity" src="public/images/1.jpg" width="100%">
       <img class="slider w3-animate-opacity" src="public/images/2.jpg" width="100%">
       <img class="slider w3-animate-opacity" src="public/images/3.jpg" width="100%">
-      <button class="w3-button w3-transparent w3-xxlarge w3-display-left w3-text-white w3-hover-text-red w3-hover-none" onclick="slideLeft()">
+      <button class="w3-button w3-transparent w3-xxlarge w3-display-left w3-text-white w3-hover-text-red w3-hover-none" onclick="slider.previous();">
         <i class="fa fa-chevron-left"></i>
       </button>
-      <button class="w3-button w3-transparent w3-xxlarge w3-display-right w3-text-white w3-hover-text-red w3-hover-none" onclick="slideRight()">
+      <button class="w3-button w3-transparent w3-xxlarge w3-display-right w3-text-white w3-hover-text-red w3-hover-none" onclick="slider.next();">
         <i class="fa fa-chevron-right"></i></button>
     </div>
     <!-- Slider -->
@@ -56,7 +56,7 @@
             <p class="w3-large">
               <i class="fa fa-filter"></i> Filter Products
             </p>
-            <button onclick="w3.toggleClass('#sideNavCategories', 'w3-show')" class="w3-button w3-block w3-white w3-hover-none w3-text-red w3-left-align w3-xlarge">
+            <button onclick="w3.toggleClass('#sideNavCategories', 'w3-show')" class="w3-button w3-block w3-white w3-hover-none w3-text-red w3-left-align w3-large">
               Categories&nbsp;<i class="fa fa-chevron-down"></i>
             </button>
             <div id="sideNavCategories" class="w3-hide w3-container w3-animate-opacity">
@@ -66,7 +66,7 @@
                 <li>Women Fashion</li>
               </ul>
             </div>
-            <button onclick="w3.toggleClass('#sideNavColors', 'w3-show')" class="w3-button w3-block w3-white w3-hover-none w3-text-red w3-left-align w3-xlarge">
+            <button onclick="w3.toggleClass('#sideNavColors', 'w3-show')" class="w3-button w3-block w3-white w3-hover-none w3-text-red w3-left-align w3-large">
               Colors&nbsp;<i class="fa fa-chevron-down"></i>
             </button>
             <div id="sideNavColors" class="w3-hide w3-container w3-animate-opacity">
@@ -90,14 +90,14 @@
                 <div class="w3-card w3-padding w3-round">
                   <img src="public/images/suit-1.jpg" alt="..." width="100%" />
                   <br />
-                  <h5 class="w3-center w3-hover-text-red">
+                  <h6 class="w3-center w3-hover-text-red">
                     <a class="w3-button w3-hover-none" href="product.html">
                       <strong>Product Name</strong>
                     </a>
-                  </h5>
+                  </h6>
                   <div class="w3-display-container w3-padding-small w3-margin-bottom">
-                    <strong class="w3-display-left w3-text-red">$ 1,000.00</strong>
-                    <button class="w3-btn w3-round-xxlarge w3-red w3-display-right w3-small"><i class="fa fa-shopping-cart"></i>Buy</button>
+                    <strong class="w3-display-left w3-text-red w3-small">$ 1,000.00</strong>
+                    <button class="w3-btn w3-round-xxlarge w3-red w3-display-right w3-small"><i class="fa fa-shopping-cart"></i> Buy</button>
                   </div>
                 </div>
               </div>
@@ -108,14 +108,14 @@
                 <div class="w3-card w3-padding w3-round">
                   <img src="public/images/suit-2.jpg" alt="..." width="100%" />
                   <br />
-                  <h5 class="w3-center w3-hover-text-red">
+                  <h6 class="w3-center w3-hover-text-red">
                     <a class="w3-button w3-hover-none" href="product.html">
                       <strong>Product Name</strong>
                     </a>
-                  </h5>
+                  </h6>
                   <div class="w3-display-container w3-padding-small w3-margin-bottom">
-                    <strong class="w3-display-left w3-text-red">$ 1,000.00</strong>
-                    <button class="w3-btn w3-round-xxlarge w3-red w3-display-right w3-small"><i class="fa fa-shopping-cart"></i>Buy</button>
+                    <strong class="w3-display-left w3-text-red w3-small">$ 1,000.00</strong>
+                    <button class="w3-btn w3-round-xxlarge w3-red w3-display-right w3-small"><i class="fa fa-shopping-cart"></i> Buy</button>
                   </div>
                 </div>
               </div>
@@ -126,14 +126,14 @@
                 <div class="w3-card w3-padding w3-round">
                   <img src="public/images/suit-3.jpg" alt="..." width="100%" />
                   <br />
-                  <h5 class="w3-center w3-hover-text-red">
+                  <h6 class="w3-center w3-hover-text-red">
                     <a class="w3-button w3-hover-none" href="product.html">
                       <strong>Product Name</strong>
                     </a>
-                  </h5>
+                  </h6>
                   <div class="w3-display-container w3-padding-small w3-margin-bottom">
-                    <strong class="w3-display-left w3-text-red">$ 1,000.00</strong>
-                    <button class="w3-btn w3-round-xxlarge w3-red w3-display-right w3-small"><i class="fa fa-shopping-cart"></i>Buy</button>
+                    <strong class="w3-display-left w3-text-red w3-small">$ 1,000.00</strong>
+                    <button class="w3-btn w3-round-xxlarge w3-red w3-display-right w3-small"><i class="fa fa-shopping-cart"></i> Buy</button>
                   </div>
                 </div>
               </div>
@@ -144,14 +144,14 @@
                 <div class="w3-card w3-padding w3-round">
                   <img src="public/images/suit-4.jpg" alt="..." width="100%" />
                   <br />
-                  <h5 class="w3-center w3-hover-text-red">
+                  <h6 class="w3-center w3-hover-text-red">
                     <a class="w3-button w3-hover-none" href="product.html">
                       <strong>Product Name</strong>
                     </a>
                   </h5>
                   <div class="w3-display-container w3-padding-small w3-margin-bottom">
-                    <strong class="w3-display-left w3-text-red">$ 1,000.00</strong>
-                    <button class="w3-btn w3-round-xxlarge w3-red w3-display-right w3-small"><i class="fa fa-shopping-cart"></i>Buy</button>
+                    <strong class="w3-display-left w3-text-red w3-small">$ 1,000.00</strong>
+                    <button class="w3-btn w3-round-xxlarge w3-red w3-display-right w3-small"><i class="fa fa-shopping-cart"></i> Buy</button>
                   </div>
                 </div>
               </div>
@@ -162,14 +162,14 @@
                 <div class="w3-card w3-padding w3-round">
                   <img src="public/images/suit-5.jpg" alt="..." width="100%" />
                   <br />
-                  <h5 class="w3-center w3-hover-text-red">
+                  <h6 class="w3-center w3-hover-text-red">
                     <a class="w3-button w3-hover-none" href="product.html">
                       <strong>Product Name</strong>
                     </a>
                   </h5>
                   <div class="w3-display-container w3-padding-small w3-margin-bottom">
-                    <strong class="w3-display-left w3-text-red">$ 1,000.00</strong>
-                    <button class="w3-btn w3-round-xxlarge w3-red w3-display-right w3-small"><i class="fa fa-shopping-cart"></i>Buy</button>
+                    <strong class="w3-display-left w3-text-red w3-small">$ 1,000.00</strong>
+                    <button class="w3-btn w3-round-xxlarge w3-red w3-display-right w3-small"><i class="fa fa-shopping-cart"></i> Buy</button>
                   </div>
                 </div>
               </div>
@@ -180,14 +180,14 @@
                 <div class="w3-card w3-padding w3-round">
                   <img src="public/images/suit-6.jpg" alt="..." width="100%" />
                   <br />
-                  <h5 class="w3-center w3-hover-text-red">
+                  <h6 class="w3-center w3-hover-text-red">
                     <a class="w3-button w3-hover-none" href="product.html">
                       <strong>Product Name</strong>
                     </a>
-                  </h5>
+                  </h6>
                   <div class="w3-display-container w3-padding-small w3-margin-bottom">
-                    <strong class="w3-display-left w3-text-red">$ 1,000.00</strong>
-                    <button class="w3-btn w3-round-xxlarge w3-red w3-display-right w3-small"><i class="fa fa-shopping-cart"></i>Buy</button>
+                    <strong class="w3-display-left w3-text-red w3-small">$ 1,000.00</strong>
+                    <button class="w3-btn w3-round-xxlarge w3-red w3-display-right w3-small"><i class="fa fa-shopping-cart"></i> Buy</button>
                   </div>
                 </div>
               </div>
