@@ -1,0 +1,23 @@
+<div class="w3-quarter">
+  <p class="w3-large">
+    <i class="fa fa-filter"></i> Filter Products
+  </p>
+  <button onclick="w3.toggleClass('#sideNavCategories', 'w3-show')" class="w3-button w3-block w3-white w3-hover-none w3-text-red w3-left-align w3-large">
+    Categories&nbsp;<i class="fa fa-chevron-down"></i>
+  </button>
+  <div id="sideNavCategories" class="w3-hide w3-container w3-animate-opacity">
+    <ul id="categories">
+      <li w3-repeat="categories">{{categories}}</li>
+    </ul>
+  </div>
+  <button onclick="w3.toggleClass('#sideNavColors', 'w3-show')" class="w3-button w3-block w3-white w3-hover-none w3-text-red w3-left-align w3-large">
+    Colors&nbsp;<i class="fa fa-chevron-down"></i>
+  </button>
+  <div id="sideNavColors" class="w3-hide w3-container w3-animate-opacity">
+    <ul id="colors">
+      <li w3-repeat="colors">{{name}}</li>
+    </ul>
+  </div>
+  <br />
+  <br />
+</div>

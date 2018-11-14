@@ -1,0 +1,32 @@
+<div class="w3-container w3-row w3-margin-bottom">
+  <div class="w3-card-4 w3-padding-large w3-padding-48 w3-round-xlarge w3-col s12 w3-white">
+    <div class="w3-row">
+      <div class="w3-col m6">
+        <div class="w3-display-container w3-animate-zoom">
+          <img class="slider w3-animate-opacity" src="public/images/product1.jpg" width="100%">
+          <img class="slider w3-animate-opacity" src="public/images/product2.jpg" width="100%">
+          <img class="slider w3-animate-opacity" src="public/images/product3.jpg" width="100%">
+          <button class="w3-button w3-transparent w3-xxlarge w3-display-left w3-text-red w3-hover-none" onclick="slider.previous();">
+            <i class="fa fa-chevron-left"></i>
+          </button>
+          <button class="w3-button w3-transparent w3-xxlarge w3-display-right w3-text-red w3-hover-none" onclick="slider.next();">
+            <i class="fa fa-chevron-right"></i></button>
+        </div>
+        <br />
+        <br />
+        <div class="w3-row-padding w3-section w3-hide-small">
+          <div class="w3-col s2">
+            <img class="w3-opacity w3-hover-opacity-off" src="public/images/product1.jpg" style="width: 100%; cursor: pointer" onclick="slider.display(1)">
+          </div>
+          <div class="w3-col s2">
+            <img class="w3-opacity w3-hover-opacity-off" src="public/images/product2.jpg" style="width: 100%; cursor: pointer" onclick="slider.display(2)">
+          </div>
+          <div class="w3-col s2">
+            <img class="w3-opacity w3-hover-opacity-off" src="public/images/product3.jpg" style="width: 100%; cursor: pointer" onclick="slider.display(3)">
+          </div>
+        </div>
+      </div>
+      <div class="w3-col m6"></div>
+    </div>
+  </div>
+</div>
