@@ -10,6 +10,7 @@ class fakeApi {
     this.getCategories = this.getCategories.bind(this);
     this.getColors = this.getColors.bind(this);
     this.getProducts = this.getProducts.bind(this);
+    this.getProduct = this.getProduct.bind(this);
     this.searchProducts = this.searchProducts.bind(this);
   }
   
@@ -18,6 +19,12 @@ class fakeApi {
       products: this.products,
       count: this.products.length,
     };
+  }
+
+  getProduct(pid) {
+    const products = this.products.filter(product => product.id == pid);
+
+    return products[0];
   }
 
   searchProducts(str) {
@@ -84,4 +91,4 @@ class fakeApi {
   }
 }
 
-new fakeApi();
+export default fakeApi;

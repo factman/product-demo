@@ -1,32 +1,58 @@
-<div class="w3-container w3-row w3-margin-bottom">
+<div class="w3-container w3-row w3-margin-bottom" id="singleProduct">
   <div class="w3-card-4 w3-padding-large w3-padding-48 w3-round-xlarge w3-col s12 w3-white">
-    <div class="w3-row">
+    <div class="w3-row w3-row-padding">
       <div class="w3-col m6">
         <div class="w3-display-container w3-animate-zoom">
-          <img class="slider w3-animate-opacity" src="public/images/product1.jpg" width="100%">
-          <img class="slider w3-animate-opacity" src="public/images/product2.jpg" width="100%">
-          <img class="slider w3-animate-opacity" src="public/images/product3.jpg" width="100%">
-          <button class="w3-button w3-transparent w3-xxlarge w3-display-left w3-text-red w3-hover-none" onclick="slider.previous();">
+          <img class="slider w3-animate-opacity" src="{{image}}" width="100%">
+          <img class="slider w3-animate-opacity w3-grayscale-max" src="{{image}}" width="100%">
+          <img class="slider w3-animate-opacity w3-sepia-max" src="{{image}}" width="100%">
+          <button class="w3-button w3-transparent w3-xxlarge w3-display-left w3-text-red w3-hover-none" id="sliderPrev">
             <i class="fa fa-chevron-left"></i>
           </button>
-          <button class="w3-button w3-transparent w3-xxlarge w3-display-right w3-text-red w3-hover-none" onclick="slider.next();">
+          <button class="w3-button w3-transparent w3-xxlarge w3-display-right w3-text-red w3-hover-none" id="sliderNext">
             <i class="fa fa-chevron-right"></i></button>
         </div>
         <br />
         <br />
-        <div class="w3-row-padding w3-section w3-hide-small">
+        <div class="w3-row-padding w3-section w3-hide-small" id="thumbs">
           <div class="w3-col s2">
-            <img class="w3-opacity w3-hover-opacity-off" src="public/images/product1.jpg" style="width: 100%; cursor: pointer" onclick="slider.display(1)">
+            <img class="w3-opacity w3-hover-opacity-off" src="{{image}}" style="width: 100%; cursor: pointer">
           </div>
           <div class="w3-col s2">
-            <img class="w3-opacity w3-hover-opacity-off" src="public/images/product2.jpg" style="width: 100%; cursor: pointer" onclick="slider.display(2)">
+            <img class="w3-opacity w3-hover-opacity-off w3-grayscale-max" src="{{image}}" style="width: 100%; cursor: pointer">
           </div>
           <div class="w3-col s2">
-            <img class="w3-opacity w3-hover-opacity-off" src="public/images/product3.jpg" style="width: 100%; cursor: pointer" onclick="slider.display(3)">
+            <img class="w3-opacity w3-hover-opacity-off w3-sepia-max" src="{{image}}" style="width: 100%; cursor: pointer">
           </div>
         </div>
       </div>
-      <div class="w3-col m6"></div>
+      <div class="w3-col m6">
+        <h2>
+          <strong>{{name}}</strong>
+        </h2>
+        <h3>${{price}}</h3>
+        <br />
+        <ul class="w3-ul w3-xlarge w3-margin-bottom">
+          <li>
+            <h3>Product Specifications:</h3>
+          </li>
+          <li>
+            SKU: <small>{{id}}</small>
+          </li>
+          <li>
+            Color: <small>{{color}}</small>
+          </li>
+          <li>
+            Category: <small>{{category}}</small>
+          </li>
+        </ul>
+        <br />
+        <div class="w3-display-container w3-padding-small w3-margin-top">
+          <button class="w3-btn w3-round-xxlarge w3-red w3-display-right w3-padding-large">
+            <i class="fa fa-shopping-cart"></i> Buy
+          </button>
+        </div>
+      </div>
     </div>
   </div>
 </div>
